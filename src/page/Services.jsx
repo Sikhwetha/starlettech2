@@ -2,7 +2,7 @@ import React from "react";
 import ServiceHero from "../components/services/ServiseHero";
 import BriefOffer from "../components/services/BriefOffer";
 
-import "../style/services/Service.css";
+
 import Offer from "../components/services/Offer";
 
 const Services = () => {

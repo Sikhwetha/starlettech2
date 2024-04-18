@@ -3,7 +3,7 @@ import brand from "../../assets/image 6.png";
 import host from "../../assets/host.png";
 import social from "../../assets/social.png";
 import app from "../../assets/app.png";
-import { motion } from "framer-motion";
+
 
 import OfferCard from "../../utils/OfferCard";
 
@@ -12,13 +12,12 @@ const Offer = () => {
     <>
       <div className="w-full bg-white py-10 px-4">
         <div className=" max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 ">
-        <motion.img
+        <img
             className="w-[420px] mx-auto"
             src={web}
             alt="Web design"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+          data-aos= "fade-down-right"
+          
           />
           <OfferCard
             className="first-card"
@@ -58,21 +57,17 @@ const Offer = () => {
             slist4="Consistent Brand Messaging"
             slist5="Client-Centric Approach"
           />
-          <motion.img className="w-[420px] mx-auto" 
+          <img data-aos="zoom-in" className="w-[420px] mx-auto" 
           src={brand} alt="Web design" 
-          initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+          
           />
         </div>
       </div>
       <div className="w-full bg-white py-10 px-4">
         <div className=" max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 ">
-          <motion.img className="w-[420px] mx-auto"
+          <img data-aos="zoom-in"  className="w-[420px] mx-auto"
            src={host} alt="Web design"
-           initial={{ opacity: 0, y: 100 }}
-           animate={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.5 }}
+          
            />
           <OfferCard
             className="first-card"
@@ -112,21 +107,17 @@ const Offer = () => {
             slist4="Results-Oriented Strategies"
             slist5="Transparent Reporting"
           />
-          <motion.img className="w-[420px] mx-auto" 
+          <img data-aos="zoom-in-down" className="w-[420px] mx-auto" 
           src={social} alt="Web design"
-          initial={{ opacity: 0, y: 100 }}
-           animate={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.5 }} 
+         
           />
         </div>
       </div>
       <div className="w-full bg-white py-10 px-4">
         <div className=" max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 ">
-          <motion.img className="w-[420px] mx-auto" 
+          <img data-aos='flip-down' className="w-[420px] mx-auto" 
           src={app} alt="Web design"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }} 
+         
           
           />
           <OfferCard

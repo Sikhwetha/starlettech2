@@ -6,11 +6,11 @@ const ServiceHero = () => {
     <>
       <div className="w-full bg-[#2B2929]">
         <div className="text-white">
-          <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-            <p className="text-[orange] font-bold md:text-[19px] text-[11px] sm:mt-[120px] sm:text-[15px] text-4xl">
+          <div data-aos='zoom-in-up' className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
+            <p data-aos='fade-down' className="text-[orange] font-bold md:text-[19px] text-[11px] sm:mt-[120px] sm:text-[15px] text-4xl">
               GET GREATEST SERVICE FROM OUR COMPANY
             </p>
-            <h1 className="md:text-8xl sm:text-6xl text-4xl font-bold md:py-6">
+            <h1 data-aos='fade-up' className="md:text-8xl sm:text-6xl text-4xl font-bold md:py-6">
               OUR <span className="text-[orange]">SERVICES</span>
             </h1>
             <div>

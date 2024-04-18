@@ -5,14 +5,14 @@ import Graphic from "../../assets/9025778_paint_brush_icon.svg";
 
 import Card from "../../utils/Card";
 
-import "../../style/home/Hero.css";
-
 const Hero = () => {
   const hero = (
-    <div className="hero">
-      <h3 className="top-head">Multi-media company</h3>
-      <h1 className="mid-head">Starlet Tech</h1>
-      <h4 className="low-head">creative design agency</h4>
+    <div className="text-center my-8">
+      <h3 className="font-medium text-xl mb-0">Multi-media company</h3>
+      <h1 className="font-black text-4xl sm:text-7xl 2xl:text-9xl uppercase bg-gradient-to-r from-[#ffa500] to-[#0000ff] text-transparent bg-clip-text my-2">
+        Starlet Tech
+      </h1>
+      <h4 className="font-extrabold text-2xl">creative design agency</h4>
     </div>
   );
 
@@ -46,9 +46,9 @@ const Hero = () => {
   return (
     <>
       {hero}
-      <div className="card-main-con">
+      <div className="py-3 grid place-items-center md:grid-cols-2 lg:grid-cols-3 lg:gap-x-10 2xl:grid-cols-4">
         {cardDetails.map((detail, index) => (
-          <div className="hero-container" key={index}>
+          <div className="" key={index}>
             <Card
               image={detail.cardImage}
               heading={detail.cardHeading}

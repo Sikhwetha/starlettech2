@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Loc from "../assets/location.png";
 import Phone from "../assets/phone.png";
 import Email from "../assets/email.png";
 
+
+
+
+
 const Contact = () => {
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,24 +34,27 @@ const Contact = () => {
     });
   };
 
+ 
   return (
+
+    
     <>
       <section className="py-16">
         <div className="max-w-6xl mx-auto p-4 md:p-16 xl:p-20">
           <div className="lg:w-2/3 space-y-5 text-center mx-auto mb-10">
-            <h1 className="text-gray-800 uppercase -tracking-widest dark:text-white font-medium text-4xl">
+            <h1 data-aos="zoom-out" className="text-gray-800 uppercase -tracking-widest dark:text-white font-medium text-4xl">
               get in touch
             </h1>
-            <div className="h-0.5 bg-[orange]"></div>
-            <p className="text-gray-400 dark:text-gray-400 text-base leading-6 ">
+            <div data-aos="fade-down" className="h-0.5 bg-[orange]"></div>
+            <p data-aos='fade-up' className="text-gray-400 dark:text-gray-400 text-base leading-6 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
               excepturi ad praesentium ratione tempora sunt facilis qui voluptas
               nostrum necessitatibus,
             </p>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 ">
-            <div class="bg-[#2B2929] h-auto p-4">
+          <div data-aos='flip-left' className="grid grid-cols-1 sm:grid-cols-2 ">
+            <div className="bg-[#2B2929] h-auto p-4">
               <div>
                 <div className="flex my-6 ">
                   <div className=" bg-[orange] h-[50px] w-[50px] items-center justify-center rounded-full flex">
@@ -55,13 +63,13 @@ const Contact = () => {
 
                   <address className="ml-2 text-white w-full">
                     <h3 className="text-base font-medium text-[16px]  dark:text-white">
-                      Address:{" "}
+                      Address:
                       <span className="text-[13px] font-light w-full">
                         198 west 21th
                       </span>
                     </h3>
-                    <span span className="text-[13px] font-light w-full">
-                      {" "}
+                    <span  className="text-[13px] font-light w-full">
+                      
                       198 west 21th street, 721 joburg
                     </span>
                     <p className="text-[13px] font-light">2190</p>
@@ -98,7 +106,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div class="bg-orange-300 h-auto p-4  ">
+            <div className="bg-orange-300 h-auto p-4  ">
               <h3 className="capitalize text-[23px] font-bold mb-6">
                 Contact us today
               </h3>
@@ -157,10 +165,10 @@ const Contact = () => {
                   className="w-[180px] bg-white h-[40px] rounded-br-[30px] rounded-tl-[30px] my-9 relative overflow-hidden focus:outline-none focus:border-blue-500 group"
                 >
                   {" "}
-                  <span class="relative z-10 hover:text-white">
+                  <span className="relative z-10 hover:text-white">
                     Send Message
                   </span>
-                  <div class="absolute inset-0 bg-orange-400 w-0 transition-all duration-300 group-hover:w-full"></div>
+                  <div className="absolute inset-0 bg-orange-400 w-0 transition-all duration-300 group-hover:w-full"></div>
                 </button>
               </form>
             </div>
