@@ -4,7 +4,7 @@ import Design from "../assets/design.png";
 import Host from "../assets/database.png";
 import Dev from "../assets/dev.png";
 
-import "../style/servseccard.css";
+// import "../style/servseccard.css";
 
 export const services = [
   {
@@ -30,11 +30,13 @@ export const services = [
 const ServSecCard = (props) => {
   return (
     <>
-      <div className="top-sev-con">
-        <div className="sec-card-container">
-          <img src={props.image} alt="..." width={30} />
-          <h3 className="serv-card-title">{props.title}</h3>
-          <p className="serv-card-content">{props.content}</p>
+      <div className="h-auto">
+        <div className="bg-black text-white mb-2 flex flex-col justify-center items-center rounded-xl">
+          <img className="my-4" src={props.image} alt="..." width={30} />
+          <h3 className="capitalize text-2xl my-2 text-[#f4a261]">
+            {props.title}
+          </h3>
+          <p className="text-start py-4 px-2 text-sm">{props.content}</p>
         </div>
       </div>
     </>
