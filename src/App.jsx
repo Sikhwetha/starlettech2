@@ -8,7 +8,7 @@ import Services from "./page/Services";
 import Footer from "./utils/Footer";
 import Navbar from "./utils/Navbar";
 
-import './index.css'
+import "./index.css";
 
 import "./style/style.css";
 import "./style/utils.css";
@@ -18,24 +18,21 @@ import Hosting from "./page/Hosting";
 import DigitalMarketing from "./page/DigitalMarketing";
 import AppDevelopment from "./page/AppDevelopment";
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import ScrollToTop from "./components/ScrollToTop";
 
-
-
 function App() {
-
-  useEffect(()=>{
-    Aos.init({duration:2000})
-  } ,[])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <div>
       <Router>
         <Navbar />
-        <ScrollToTop  />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -51,7 +48,7 @@ function App() {
         <Footer />
       </Router>
     </div>
-  )
+  );
 }
 
 export default App;

@@ -7,12 +7,19 @@ import Card from "../../utils/Card";
 
 const Hero = () => {
   const hero = (
-    <div className="text-center my-8">
-      <h3 className="font-medium text-xl mb-0">Multi-media company</h3>
-      <h1 className="font-black text-4xl sm:text-7xl 2xl:text-9xl uppercase bg-gradient-to-r from-[#ffa500] to-[#0000ff] text-transparent bg-clip-text my-2">
+    <div className="text-center my-24">
+      <h3 data-aos="fade-right" className="font-medium text-xl mb-0">
+        Multi-media company
+      </h3>
+      <h1
+        data-aos="zoom-in-up"
+        className="font-black text-4xl sm:text-7xl 2xl:text-9xl uppercase bg-gradient-to-r from-[#ffa500] to-[#0000ff] text-transparent bg-clip-text my-2"
+      >
         Starlet Tech
       </h1>
-      <h4 className="font-extrabold text-2xl">creative design agency</h4>
+      <h4 data-aos="fade-left" className="font-extrabold text-2xl">
+        creative design agency
+      </h4>
     </div>
   );
 
@@ -46,7 +53,9 @@ const Hero = () => {
   return (
     <>
       {hero}
-      <div className="py-3 grid place-items-center md:grid-cols-2 lg:grid-cols-3 lg:gap-x-10 2xl:grid-cols-4">
+      <div
+        className="py-3 grid place-items-center md:grid-cols-2 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-2 2xl:grid-cols-4"
+      >
         {cardDetails.map((detail, index) => (
           <div className="" key={index}>
             <Card

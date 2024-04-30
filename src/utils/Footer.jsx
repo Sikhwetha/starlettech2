@@ -47,8 +47,8 @@ const Footer = () => {
             <div className="sec-box_container">
               <h3 className="foot-title">Navigation</h3>
               {footerLinks.map((link, index) => (
-                <div className="foot-links">
-                  <li key={index}>
+                <div key={index} className="foot-links">
+                  <li>
                     <a href={link.path}>{link.title}</a>
                   </li>
                 </div>

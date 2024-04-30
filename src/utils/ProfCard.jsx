@@ -10,8 +10,6 @@ import HTML from "../assets/HTML.png";
 import SEO from "../assets/SEO.png";
 import Model from "../assets/3D.png";
 
-import "../style/profcard.css";
-
 export const profeciencies = [
   {
     image: PS,
@@ -81,10 +79,20 @@ export const profeciencies = [
 const ProfCard = (props) => {
   return (
     <>
-      <div className="pcard-con">
-        <img src={props.image} alt={props.alt} width={80} />
-        <h1 className="pcard-title">{props.title}</h1>
-        <p className="pcard-msg">{props.content}</p>
+      <div
+        data-aos="fade-up-right"
+        className="bg-[#808080] w-auto h-[300px] p-4 lg:h-[280px] rounded-sm transitio-all duration-200 ease-in-out hover:bg-white"
+      >
+        <img
+          className="mx-auto mb-4"
+          src={props.image}
+          alt={props.alt}
+          width={80}
+        />
+        <h1 className="uppercase text-center mb-3 text-[#0000ff] text-xl">
+          {props.title}
+        </h1>
+        <p>{props.content}</p>
       </div>
     </>
   );
